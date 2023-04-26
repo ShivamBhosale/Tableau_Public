@@ -1,0 +1,1104 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.23.0311.1104                               -->
+<workbook original-version='18.1' source-build='2022.2.8 (20222.23.0311.1104)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='gridline'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+    <style-rule element='title'>
+      <format attr='font-size' value='12' />
+    </style-rule>
+    <style-rule element='story-title'>
+      <format attr='font-size' value='12' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Sheet1 (TFL Bus Safety)' inline='true' name='federated.1tf2fcm1li21pz11fr2hv164p0jx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='TFL Bus Safety' name='excel-direct.07r3cj50s9dmri1ccu6vx1ez4as9'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/shivambhosale/Desktop/Break/Tableau/London Bus/TFL Bus Safety.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.07r3cj50s9dmri1ccu6vx1ez4as9' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='date' name='Date Of Incident' ordinal='1' />
+            <column datatype='string' name='Route' ordinal='2' />
+            <column datatype='string' name='Operator' ordinal='3' />
+            <column datatype='string' name='Group Name' ordinal='4' />
+            <column datatype='string' name='Bus Garage' ordinal='5' />
+            <column datatype='string' name='Borough' ordinal='6' />
+            <column datatype='string' name='Injury Result Description' ordinal='7' />
+            <column datatype='string' name='Incident Event Type' ordinal='8' />
+            <column datatype='string' name='Victim Category' ordinal='9' />
+            <column datatype='string' name='Victims Sex' ordinal='10' />
+            <column datatype='string' name='Victims Age' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.07r3cj50s9dmri1ccu6vx1ez4as9' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='date' name='Date Of Incident' ordinal='1' />
+            <column datatype='string' name='Route' ordinal='2' />
+            <column datatype='string' name='Operator' ordinal='3' />
+            <column datatype='string' name='Group Name' ordinal='4' />
+            <column datatype='string' name='Bus Garage' ordinal='5' />
+            <column datatype='string' name='Borough' ordinal='6' />
+            <column datatype='string' name='Injury Result Description' ordinal='7' />
+            <column datatype='string' name='Incident Event Type' ordinal='8' />
+            <column datatype='string' name='Victim Category' ordinal='9' />
+            <column datatype='string' name='Victims Sex' ordinal='10' />
+            <column datatype='string' name='Victims Age' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L10001:no:A1:L10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Of Incident</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date Of Incident]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Date Of Incident</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Route</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Route]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Route</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Operator]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Operator</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Group Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Group Name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Group Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bus Garage</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Bus Garage]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Bus Garage</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Borough</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Borough]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Borough</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Injury Result Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Injury Result Description]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Injury Result Description</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident Event Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Incident Event Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Incident Event Type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victim Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Victim Category]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Victim Category</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victims Sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Victims Sex]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Victims Sex</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victims Age</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Victims Age]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Victims Age</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Borough]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[Date Of Incident]' role='dimension' type='ordinal' />
+      <column caption='Victim Age' datatype='string' name='[Victims Age]' role='dimension' type='nominal' />
+      <column caption='Victim Sex' datatype='string' name='[Victims Sex]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' role='measure' type='quantitative' />
+      <group caption='Action (Borough)' hidden='true' name='[Action (Borough)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Borough]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_B4809F1108CC40998F8087FA9ADA49BF'>
+            <properties context=''>
+              <relation connection='excel-direct.07r3cj50s9dmri1ccu6vx1ez4as9' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='date' name='Date Of Incident' ordinal='1' />
+                  <column datatype='string' name='Route' ordinal='2' />
+                  <column datatype='string' name='Operator' ordinal='3' />
+                  <column datatype='string' name='Group Name' ordinal='4' />
+                  <column datatype='string' name='Bus Garage' ordinal='5' />
+                  <column datatype='string' name='Borough' ordinal='6' />
+                  <column datatype='string' name='Injury Result Description' ordinal='7' />
+                  <column datatype='string' name='Incident Event Type' ordinal='8' />
+                  <column datatype='string' name='Victim Category' ordinal='9' />
+                  <column datatype='string' name='Victims Sex' ordinal='10' />
+                  <column datatype='string' name='Victims Age' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Borough' name='[Action1_A0CEC34B8DE4464599BB55E5016FE791]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Incidents by Borough' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Incidents by Borough' />
+        <param name='on-empty' value='none' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Incident TreeMap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (TFL Bus Safety)' name='federated.1tf2fcm1li21pz11fr2hv164p0jx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tf2fcm1li21pz11fr2hv164p0jx'>
+            <column datatype='string' name='[Borough]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Bus Garage]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Group Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident Event Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Injury Result Description]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Operator]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Route]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Victim Category]' role='dimension' type='nominal' />
+            <column caption='Victim Age' datatype='string' name='[Victims Age]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Sheet1' datatype='integer' name='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' role='measure' type='quantitative' />
+            <column caption='Victim Sex' datatype='string' name='[Victims Sex]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Borough]' derivation='None' name='[none:Borough:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Bus Garage]' derivation='None' name='[none:Bus Garage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Group Name]' derivation='None' name='[none:Group Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Incident Event Type]' derivation='None' name='[none:Incident Event Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Injury Result Description]' derivation='None' name='[none:Injury Result Description:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Operator]' derivation='None' name='[none:Operator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route]' derivation='None' name='[none:Route:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Victim Category]' derivation='None' name='[none:Victim Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Victims Age]' derivation='None' name='[none:Victims Age:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Victims Sex]' derivation='None' name='[none:Victims Sex:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[Action (Borough)]'>
+            <groupfilter function='member' level='[Borough]' member='&quot;Westminster&quot;' user:ui-action-filter='[Action1_A0CEC34B8DE4464599BB55E5016FE791]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[Action (Borough)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e8d3d2</color>
+                <color>#dfb6b6</color>
+                <color>#d69c9b</color>
+                <color>#cd8382</color>
+                <color>#c46b6b</color>
+                <color>#bb5555</color>
+                <color>#b24140</color>
+                <color>#a92f2e</color>
+                <color>#a01e1d</color>
+                <color>#970f0e</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' />
+              <color column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' />
+              <text column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Victims Sex:nk]' />
+              <text column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Injury Result Description:nk]' />
+              <text column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Victims Age:nk]' />
+              <text column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Incident Event Type:nk]' />
+              <text column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Group Name:nk]' />
+              <text column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Victim Category:nk]' />
+              <text column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Operator:nk]' />
+              <text column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Borough:nk]' />
+              <text column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Bus Garage:nk]' />
+              <text column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Route:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BD184680-2F0B-4E4B-A63E-2D4D152CA3E3}' />
+    </worksheet>
+    <worksheet name='Incidents by Borough'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (TFL Bus Safety)' name='federated.1tf2fcm1li21pz11fr2hv164p0jx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tf2fcm1li21pz11fr2hv164p0jx'>
+            <_.fcp.ObjectModelTableType.false...column caption='Sheet1' datatype='integer' name='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Borough]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Borough]' derivation='None' name='[none:Borough:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Borough:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Borough:nk]</rows>
+        <cols>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]</cols>
+      </table>
+      <simple-id uuid='{731D3049-9C4A-4E3E-BA86-94DB31311368}' />
+    </worksheet>
+    <worksheet name='Incidents by Borrow and Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (TFL Bus Safety)' name='federated.1tf2fcm1li21pz11fr2hv164p0jx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tf2fcm1li21pz11fr2hv164p0jx'>
+            <column datatype='string' name='[Borough]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Sheet1' datatype='integer' name='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Incident Event Type]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Borough]' derivation='None' name='[none:Borough:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Incident Event Type]' derivation='None' name='[none:Incident Event Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[Action (Borough)]'>
+            <groupfilter function='member' level='[Borough]' member='&quot;Westminster&quot;' user:ui-action-filter='[Action1_A0CEC34B8DE4464599BB55E5016FE791]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Borough:nk]'>
+            <groupfilter function='level-members' level='[none:Borough:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Borough:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Westminster&quot;</bucket>
+              <bucket>&quot;Southwark&quot;</bucket>
+              <bucket>&quot;Lambeth&quot;</bucket>
+              <bucket>&quot;Croydon&quot;</bucket>
+              <bucket>&quot;Lewisham&quot;</bucket>
+              <bucket>&quot;Barnet&quot;</bucket>
+              <bucket>&quot;Camden&quot;</bucket>
+              <bucket>&quot;Brent&quot;</bucket>
+              <bucket>&quot;Ealing&quot;</bucket>
+              <bucket>&quot;Greenwich&quot;</bucket>
+              <bucket>&quot;Haringey&quot;</bucket>
+              <bucket>&quot;Hackney&quot;</bucket>
+              <bucket>&quot;Islington&quot;</bucket>
+              <bucket>&quot;Bromley&quot;</bucket>
+              <bucket>&quot;Havering&quot;</bucket>
+              <bucket>&quot;Hounslow&quot;</bucket>
+              <bucket>&quot;Newham&quot;</bucket>
+              <bucket>&quot;Hammersmith &amp; Fulham&quot;</bucket>
+              <bucket>&quot;Enfield&quot;</bucket>
+              <bucket>&quot;None London Borough&quot;</bucket>
+              <bucket>&quot;Not specified&quot;</bucket>
+              <bucket>&quot;Wandsworth&quot;</bucket>
+              <bucket>&quot;Waltham Forest&quot;</bucket>
+              <bucket>&quot;Hillingdon&quot;</bucket>
+              <bucket>&quot;Redbridge&quot;</bucket>
+              <bucket>&quot;Kingston upon Thames&quot;</bucket>
+              <bucket>&quot;Tower Hamlets&quot;</bucket>
+              <bucket>&quot;Bexley&quot;</bucket>
+              <bucket>&quot;Richmond Upon Thames&quot;</bucket>
+              <bucket>&quot;Harrow&quot;</bucket>
+              <bucket>&quot;Barking &amp; Dagenham&quot;</bucket>
+              <bucket>&quot;Kensington &amp; Chelsea&quot;</bucket>
+              <bucket>&quot;Merton&quot;</bucket>
+              <bucket>&quot;City of London&quot;</bucket>
+              <bucket>&quot;Sutton&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Incident Event Type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Borough:nk]</column>
+            <column>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[Action (Borough)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Borough:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Borough:nk] / [federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Incident Event Type:nk])</rows>
+        <cols>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]</cols>
+      </table>
+      <simple-id uuid='{45E580ED-DD07-4C5D-83F0-B2517476A0B9}' />
+    </worksheet>
+    <worksheet name='Incidents by Route'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (TFL Bus Safety)' name='federated.1tf2fcm1li21pz11fr2hv164p0jx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tf2fcm1li21pz11fr2hv164p0jx'>
+            <column datatype='string' name='[Borough]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Sheet1' datatype='integer' name='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Route]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Route]' derivation='None' name='[none:Route:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[Action (Borough)]'>
+            <groupfilter function='member' level='[Borough]' member='&quot;Westminster&quot;' user:ui-action-filter='[Action1_A0CEC34B8DE4464599BB55E5016FE791]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Route:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[Action (Borough)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[none:Route:nk]</rows>
+        <cols>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]</cols>
+      </table>
+      <simple-id uuid='{585856FA-03A7-480D-801E-2095FB532752}' />
+    </worksheet>
+    <worksheet name='Incidents over Season'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (TFL Bus Safety)' name='federated.1tf2fcm1li21pz11fr2hv164p0jx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tf2fcm1li21pz11fr2hv164p0jx'>
+            <column datatype='string' name='[Borough]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Sheet1' datatype='integer' name='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[Date Of Incident]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date Of Incident]' derivation='Month' name='[mn:Date Of Incident:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date Of Incident]' derivation='Quarter' name='[qr:Date Of Incident:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date Of Incident]' derivation='Year' name='[yr:Date Of Incident:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[Action (Borough)]'>
+            <groupfilter function='member' level='[Borough]' member='&quot;Westminster&quot;' user:ui-action-filter='[Action1_A0CEC34B8DE4464599BB55E5016FE791]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[Action (Borough)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[mn:Date Of Incident:ok]' value='iLLLLL' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[yr:Date Of Incident:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]</rows>
+        <cols>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[qr:Date Of Incident:ok]</cols>
+      </table>
+      <simple-id uuid='{56D13D52-CF3E-48A9-8A00-1FC03681FC6C}' />
+    </worksheet>
+    <worksheet name='Incidents over Time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (TFL Bus Safety)' name='federated.1tf2fcm1li21pz11fr2hv164p0jx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tf2fcm1li21pz11fr2hv164p0jx'>
+            <column datatype='string' name='[Borough]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Sheet1' datatype='integer' name='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[Date Of Incident]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_B4809F1108CC40998F8087FA9ADA49BF]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date Of Incident]' derivation='Month' name='[mn:Date Of Incident:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date Of Incident]' derivation='Year' name='[yr:Date Of Incident:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[Action (Borough)]'>
+            <groupfilter function='member' level='[Borough]' member='&quot;Westminster&quot;' user:ui-action-filter='[Action1_A0CEC34B8DE4464599BB55E5016FE791]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[Action (Borough)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[mn:Date Of Incident:ok]' value='false' />
+            <format attr='text-format' field='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[mn:Date Of Incident:ok]' value='iLLLLL' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]</rows>
+        <cols>([federated.1tf2fcm1li21pz11fr2hv164p0jx].[yr:Date Of Incident:ok] / [federated.1tf2fcm1li21pz11fr2hv164p0jx].[mn:Date Of Incident:ok])</cols>
+      </table>
+      <simple-id uuid='{2A1717CD-96D3-412D-9EEF-278CD2325D11}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='700' maxwidth='1150' minheight='700' minwidth='1150' preset-index='12' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='89857' id='12' param='horz' type-v2='layout-flow' w='98608' x='696' y='9000'>
+            <zone h='89857' id='10' type-v2='layout-basic' w='98608' x='696' y='9000'>
+              <zone h='89857' id='3' name='Incidents by Borough' w='49303' x='696' y='9000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='25309' id='5' name='Incidents by Route' w='25914' x='49999' y='43857'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='34857' id='6' name='Incidents by Borrow and Type' w='25914' x='49999' y='9000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='34857' id='7' name='Incidents over Time' w='23391' x='75913' y='9000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='25309' id='8' name='Incidents over Season' w='23391' x='75913' y='43857'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='29691' id='9' name='Incident TreeMap' w='49305' x='49999' y='69166'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='7857' id='14' type-v2='text' w='98608' x='696' y='1143'>
+            <formatted-text>
+              <run bold='true' fontsize='15'>London Bus Safety, Jan 2015 to Sept 2018</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='10'>Click on the borough to get started </run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97714' id='17' param='vert' type-v2='layout-flow' w='98608' x='696' y='1143'>
+                <zone forceUpdate='true' h='7857' id='14' type-v2='text' w='98608' x='696' y='1143'>
+                  <formatted-text>
+                    <run bold='true' fontsize='15'>London Bus Safety, Jan 2015 to Sept 2018</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontsize='10'>Click on the borough to get started </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='89857' id='3' is-fixed='true' name='Incidents by Borough' w='49303' x='696' y='9000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='236' h='34857' id='6' is-fixed='true' name='Incidents by Borrow and Type' w='25914' x='49999' y='9000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='236' h='34857' id='7' is-fixed='true' name='Incidents over Time' w='23391' x='75913' y='9000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='169' h='25309' id='5' is-fixed='true' name='Incidents by Route' w='25914' x='49999' y='43857'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='169' h='25309' id='8' is-fixed='true' name='Incidents over Season' w='23391' x='75913' y='43857'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='200' h='29691' id='9' is-fixed='true' name='Incident TreeMap' w='49305' x='49999' y='69166'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{ED3B849C-A43A-4739-BB95-B7BDD0A1DC34}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Incidents by Borough'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F56B1F51-2992-419D-87E6-A62774666CEF}' />
+    </window>
+    <window class='worksheet' name='Incidents by Route'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8C0E615B-4A86-4019-B96D-4064FD3ADF2D}' />
+    </window>
+    <window class='worksheet' name='Incidents by Borrow and Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F69450F2-B3F6-4D4D-BF0F-2AF4861B579C}' />
+    </window>
+    <window class='worksheet' name='Incidents over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{329D3D66-D0EE-4749-993D-B634CE1BE72D}' />
+    </window>
+    <window class='worksheet' name='Incidents over Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B47F5745-58C2-4540-9C97-492F754DAB62}' />
+    </window>
+    <window class='worksheet' name='Incident TreeMap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.1tf2fcm1li21pz11fr2hv164p0jx].[__tableau_internal_object_id__].[cnt:Sheet1_B4809F1108CC40998F8087FA9ADA49BF:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A211D853-99DA-4C30-BD99-3D28754222D8}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Incident TreeMap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Incidents by Borough'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Incidents by Borrow and Type' />
+        <viewpoint name='Incidents by Route' />
+        <viewpoint name='Incidents over Season'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Incidents over Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{F7724284-263A-41DC-81A5-281A2A118E5C}' />
+    </window>
+  </windows>
+</workbook>
